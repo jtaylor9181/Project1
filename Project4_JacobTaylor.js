@@ -1,7 +1,7 @@
 /**
  *   @author Taylor, Jacob (taylorj@student.ncmich.edu)
  *   @version 0.0.1
- *   @summary Project 4 || created: 11.21.2016 jarv
+ *   @summary Project 4 || created: 11.21.2016 
  *   @todo
  */
 
