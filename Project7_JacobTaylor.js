@@ -42,7 +42,7 @@ function main() {
 main();
 
 function populateCustomerInfo() {
-    let fileContents = IO.readFileSync(`Customerinfo_Project7.csv`, 'utf8');
+    let fileContents = IO.readFileSync(`Atm.csv`, 'utf8');
     let lines = fileContents.toString().split(/\r?\n/);
     for (let i = 0; i < lines.length; i++) {
         customerInfo.push(lines[i].toString().split(/,/));
@@ -83,7 +83,7 @@ function setWithdrawMoney() {
     if (withdrawChoice == 1) {
         console.log(`\nchecking Balance = \$${customerInfo[cardHolderNum][CHECKING_BAL]}`);
         while (withdrawMoney == 0 || withdrawMoney > customerInfo[cardHolderNum][CHECKING_BAL]) {
-            withdrawMoney = Number(PROMPT.question(`how much would you like to withdraw? `));
+            withdrawMoney = Number(PROMPT.question(`How much would you like to withdraw? `));
         }
         customerInfo[cardHolderNum][CHECKING_BAL] = customerInfo[cardHolderNum][CHECKING_BAL] - withdrawMoney;
         console.log(`New checking balance is \$${customerInfo[cardHolderNum][CHECKING_BAL]}`);
