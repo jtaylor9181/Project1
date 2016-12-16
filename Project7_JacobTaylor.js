@@ -42,7 +42,7 @@ function main() {
 main();
 
 function populateCustomerInfo() {
-    let fileContents = IO.readFileSync(`Atm.csv`, 'utf8');
+    let fileContents = IO.readFileSync(`Atm_Project7.csv`, 'utf8');
     let lines = fileContents.toString().split(/\r?\n/);
     for (let i = 0; i < lines.length; i++) {
         customerInfo.push(lines[i].toString().split(/,/));
